@@ -15,9 +15,9 @@ function App() {
     }, [setHit]);
     return (
         <div className="App">
-            {typeof hit === 'number' && <>Counter: {hit}</>}
-            {typeof hit === 'object' && <>Counter: ERROR[{hit.message}]</>}
-            {hit === undefined && <>Counter: Loading...</>}
+            {typeof hit === 'number' && <>You are {hit}th visitor!</>}
+            {typeof hit === 'object' && <>ERROR[{hit.message}]</>}
+            {hit === undefined && <>Now loading...</>}
         </div>
     );
 }
