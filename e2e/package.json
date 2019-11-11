@@ -1,0 +1,19 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tomingtoming <tomingtoming@gmail.com> (https://plasmic.space/)",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.0",
+    "cypress": "^3.6.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2"
+  }
+}
