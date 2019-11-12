@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('google search', () => {
+describe('counter', () => {
 
     const url = 'http://localhost:3000/';
     const api = 'https://api.countapi.xyz/hit/tomingtoming/cypress-spa-practice';
