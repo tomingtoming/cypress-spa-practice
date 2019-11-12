@@ -23,8 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cypress-run": "cd e2e && yarn && yarn cypress:run",
-    "ci": "start-server-and-test start http://localhost:3000/ cypress-run"
+    "integrationTest": "cd integrationTest && yarn && yarn cypress:run",
+    "ci": "start-server-and-test start http://localhost:3000/ integrationTest"
   },
   "eslintConfig": {
     "extends": "react-app"
