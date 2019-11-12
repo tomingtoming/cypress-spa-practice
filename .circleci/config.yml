@@ -16,6 +16,8 @@ jobs:
 
     working_directory: ~/repo
 
+    environment:
+      - CYPRESS_CACHE_FOLDER: /tmp/.cache/Cypress
     steps:
       - checkout
 
@@ -28,10 +30,13 @@ jobs:
 
       - run: yarn install
 
+      - run: cd integrationTest && yarn install
+
       - save_cache:
           paths:
             - node_modules
             - integrationTest/node_modules
+            - /tmp/.cache/Cypress
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
